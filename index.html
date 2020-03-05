@@ -9,21 +9,19 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/9b6e9d6d90.js" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/po pper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   		<div class="header">
 				<div class="logo-header">
 					<i class="fab fa-staylinked" style="font-size: 3rem"></i>
 					<span>GIAKINH</span>
 				</div>
 				<div class="list-header">
-					<i class="fas fa-bars menu-header" id="menu-header" ></i>
+					<label class="label" for="toggle"><i class="fas fa-bars menu-header" id="menu-header" ></i></label>
+					<input type="checkbox" name="" id="toggle"/>
 					<ul class="list-item" id="list-item">
 						<li class="item-home">
 							<a href="#">
@@ -293,7 +291,7 @@
 								<span class="overlay-list-header">Contact</span>
 							</a>		
 						</li>
-						<i class="fas fa-times close-list" id="close-list" ></i>
+						<label class="label" for="toggle"><i class="fas fa-times close-list" id="close-list" ></i></label>
 					</ul>
 				</div>
 				<div class="icon-header">
@@ -310,11 +308,11 @@
 								function showSearch(){
     								var item_search=document.getElementById("item-search");
     								if (boolean) {
-    									item_search.style.opacity="1";
+    									item_search.style.opacity="0";
     									item_search.style.transform='scale(1)';
     									boolean=false;
     								}else{
-    									item_search.style.opacity="0";
+    									item_search.style.opacity="1"
     									boolean=true;
     								}
 								}
